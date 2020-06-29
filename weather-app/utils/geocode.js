@@ -1,6 +1,6 @@
 const request = require('request')
 
-const baseUrl = 'https://api.mapbox.com'
+const baseUrl = 'http://api.mapbox.com'
 const endpoint = 'geocoding/v5/mapbox.places'
 const token = 'pk.eyJ1IjoibW9ua2V5bGVhZiIsImEiOiJjazk1MWNzbGwwN21iM2VwMnIyb3U2cjVzIn0.9tqhmm30zfNSijk9BQA9gA'
 const type = 'poi'
