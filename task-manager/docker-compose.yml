@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  mongodb:
+    container_name: node_course_mongo
+    image: mongo:latest
+    volumes:
+      - ./.docker/config/mongo/mongod.conf:/etc/mongod.conf
+      - ./.docker/data/mongo:/data/db
+      - ./.docker/logs/mongo:/var/log/mongodb
+    user: "${UID_GID}"
+    ports:
+      - "${DB_MAP_PORT}"
+    command: [--auth]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASS}
