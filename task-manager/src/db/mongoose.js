@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const validator = require('validator')
 
 mongoose.connect('mongodb://localhost:27017/task-manager-api', {
     user: 'root',
@@ -8,22 +9,15 @@ mongoose.connect('mongodb://localhost:27017/task-manager-api', {
     useUnifiedTopology: true
 })
 
-const User = mongoose.model('User', {
-    name: {
-        type: String
+
+const Task = mongoose.model('Task', {
+    description: {
+        type: String,
+        required: true,
+        trim: true
     },
-    age: {
-        type: Number
+    completed: {
+        type: Boolean,
+        default: false
     }
-})
-
-const me = new User({
-    name: "Tuan Cao",
-    age: 29
-})
-
-me.save().then((me) => {
-    console.log(me)
-}).catch((error) => {
-    console.log('Error!', error)
 })

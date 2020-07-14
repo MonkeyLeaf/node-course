@@ -1,4 +1,4 @@
-const mongodb = require('task-manager/mongodb')
+const mongodb = require('task-manager/archives/mongodb')
 const ObjectID = mongodb.ObjectID
 
 const id = new ObjectID()
