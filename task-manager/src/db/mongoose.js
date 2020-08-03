@@ -7,5 +7,6 @@ mongoose.connect('mongodb://localhost:27017/task-manager-api', {
     auth: { authSource: 'admin' },
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
+    useFindAndModify: false,
+    autoIndex: false
 })
