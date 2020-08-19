@@ -1,5 +1,4 @@
 // This snippet converts the elements of an array into <li> tags and appends them to the list of the given ID.
-// TODO: include html for test
 
 const arrayToHtmlList = (arr, listID) =>
     (el => (
