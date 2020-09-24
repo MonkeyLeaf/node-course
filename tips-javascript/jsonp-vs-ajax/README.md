@@ -1,1 +1,0 @@
-https://anonystick.com/blog-developer/jsonp-la-gi-su-khac-biet-giua-jsonp-va-ajax-2020072855752929
