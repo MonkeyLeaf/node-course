@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
 
-mongoose.connect('mongodb://localhost:27017/task-manager-api', {
+mongoose.connect(process.env.MONGODB_URL, {
     user: 'root',
     pass: '123456',
     auth: { authSource: 'admin' },
