@@ -8,11 +8,7 @@ const sendWelcomeEmail = (email, name) => {
         from: 'caotuan92.hus@gmail.com',
         subject: 'Thank you to joining in!',
         text: `Welcome to the app, ${name}. Let me know how you get along with the app`
-    }).then(() => {
-        console.log('Email sent')
-    }).catch((error) => {
-        console.error(error)
-    })
+    }).then(() => {})
 }
 
 const sendCancelationEmail = (email, name) => {
@@ -21,11 +17,7 @@ const sendCancelationEmail = (email, name) => {
         from: 'caotuan92.hus@gmail.com',
         subject: 'Sorry to see you go!',
         text: `Goodbye, ${name}. See you soon`
-    }).then(() => {
-        console.log('Email sent')
-    }).catch((error) => {
-        console.error(error)
-    })
+    }).then(() => {})
 }
 
 module.exports = {
