@@ -1,6 +1,6 @@
 # node-course
 
-- next to lesson 1xx
+- next to lesson 154
 
 ## About Test By Jest
 
@@ -35,3 +35,13 @@
 
 ## About Send Email
 - sendgrid.com
+
+## Websocket
+
+![Websocket](images/websocket.png)
+
+- Websocket allow for full-duplex communication
+- Websocket is a separate protocol from HTTP
+- Persistent connection between client and server
+
+![Websocket](images/websocket_2.png)
