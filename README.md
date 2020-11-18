@@ -1,6 +1,6 @@
 # node-course
 
-- next to lesson 171 1:21
+- FINISH
 
 ## About Test By Jest
 
@@ -45,3 +45,7 @@
 - Persistent connection between client and server
 
 ![Websocket](images/websocket_2.png)
+
+## About chat-app
+
+- running by ```npm run dev```
